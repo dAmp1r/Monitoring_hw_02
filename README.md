@@ -18,4 +18,11 @@ sudo systemctl enable zabbix-server apache2
 ![Авторизация](https://github.com/dAmp1r/Monitoring_hw_02/blob/main/zabbix.png)
 
 
-Задание 2.           
+Задание 2.       
+
+wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb        
+dpkg -i zabbix-release_6.0-4+debian11_all.deb        
+apt update        
+apt install zabbix-agent         
+systemctl restart zabbix-agent         
+systemctl enable zabbix-agent         
