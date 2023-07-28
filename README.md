@@ -27,3 +27,6 @@ apt install zabbix-agent
 nano /etc/zabbix/zabbix_agentd.conf #вносим изменения в строке Server          
 systemctl restart zabbix-agent.service             
 systemctl enable zabbix-agent         
+![Host](https://github.com/dAmp1r/Monitoring_hw_02/blob/main/host.png)
+![Log](https://github.com/dAmp1r/Monitoring_hw_02/blob/main/log_agent.png)
+![Latest date](https://github.com/dAmp1r/Monitoring_hw_02/blob/main/lates_date.png)
