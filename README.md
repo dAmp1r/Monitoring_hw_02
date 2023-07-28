@@ -26,3 +26,4 @@ apt update
 apt install zabbix-agent         
 systemctl restart zabbix-agent         
 systemctl enable zabbix-agent         
+nano /etc/zabbix/zabbix_agentd.conf #вносим изменения в строке Server     
