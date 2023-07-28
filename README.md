@@ -23,7 +23,7 @@ sudo systemctl enable zabbix-server apache2
 wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4+debian11_all.deb        
 dpkg -i zabbix-release_6.0-4+debian11_all.deb        
 apt update        
-apt install zabbix-agent         
-systemctl restart zabbix-agent         
+apt install zabbix-agent              
+nano /etc/zabbix/zabbix_agentd.conf #вносим изменения в строке Server          
+systemctl restart zabbix-agent.service             
 systemctl enable zabbix-agent         
-nano /etc/zabbix/zabbix_agentd.conf #вносим изменения в строке Server     
